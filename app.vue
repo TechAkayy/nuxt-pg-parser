@@ -1,22 +1,5 @@
 <script setup lang="ts">
   const title = ref('Hello World')
-  const route = useRoute()
-  useHead({
-    meta: [{property: 'og:title', content: `App Name - ${route.meta.title}`}],
-    script: [
-      {
-        src: 'https://third-party-script.com',
-        // valid options are: 'head' | 'bodyClose' | 'bodyOpen'
-        tagPosition: 'bodyClose',
-      },
-    ],
-    link: [
-      {
-        rel: 'preconnect',
-        href: 'https://fonts.googleapis.com',
-      },
-    ],
-  })
 </script>
 <template>
   <div>
